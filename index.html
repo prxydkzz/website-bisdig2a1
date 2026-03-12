@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kelas BIGVONERS</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>BISNIS DIGITAL 2-A1 UMSIDA</span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#social">Medsos</a></li>
+            <li><a href="#struktur">Struktur dan Anggota</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="jadwal matkul.html" target="_blank">Jadwal</a></li>
+            <li><a href="javascript:void(0)" onclick="logout()" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a></li>
+        </ul>
+        
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Bagian Utama) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di <br> <span class="highlight">Kelas Bisnis Digital A1</span></h1>
+            <p>Melaju Pesat Tanpa Batas</p>
+            <a href="#about" class="btn">Jelajahi Kelas</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kelas</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Website Bisnis Digital 2-A1 UMSIDA merupakan halaman digital yang dibuat untuk menampilkan berbagai informasi dan aktivitas yang berkaitan dengan kelas. Di dalamnya terdapat gambaran tentang jadwal perkuliahan, mata kuliah, serta beberapa dokumentasi yang menjadi bagian dari kegiatan mahasiswa selama menjalani proses belajar.<br><br> Melalui website ini, kelas Bisnis Digital 2-A1 memiliki tempat untuk menyimpan dan membagikan informasi secara lebih teratur. Selain sebagai media informasi, website ini juga menjadi bagian dari dokumentasi perjalanan mahasiswa dalam menjalani perkuliahan di bidang bisnis digital</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h3>33</h3>
+                            <p>Mahasiswa</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>17</h3>
+                            <p>Laki-Laki</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>18</h3>
+                            <p>Perempuan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECTION PENGUMUMAN -->
+    <section id="pengumuman" class="pengumuman-section">
+        <div class="container">
+            <h2>📢 Pengumuman</h2>
+            <div class="pengumuman-grid">
+                <!-- Pengumuman 1 -->
+                <div class="pengumuman-card" onclick="openPengumuman(1)">
+                    <div class="pengumuman-header">
+                        <span class="pengumuman-tag">LIBUR</span>
+                        <span class="pengumuman-date">16 Maret 2026</span>
+                    </div>
+                    <h3>Libur Hari Raya Idulfitri</h3>
+                    <p>Libur Hari Raya Idulfitri pada tanggal 16 Maret 2026</p>
+                </div>
+
+                <!-- Pengumuman 2 -->
+                <div class="pengumuman-card" onclick="openPengumuman(2)">
+                    <div class="pengumuman-header">
+                        <span class="pengumuman-tag">AKADEMIK</span>
+                        <span class="pengumuman-date">30 Maret 2026</span>
+                    </div>
+                    <h3>Aktif Perkuliahan</h3>
+                    <p>Perkuliahan dimulai lagi pada 30 Maret 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <!-- Media Sosial Section -->
+    <section id="social" class="social">
+        <h2>Media Sosial</h2>
+        <div class="social-container">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/bigvoners" target="_blank" class="social-box">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@bisnisdigital.umsida" target="_blank" class="social-box">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Struktur Kelas Section -->
+    <section id="struktur" class="struktur">
+        <h2>Struktur Kelas</h2>
+        <div class="struktur-container">
+
+            <div class="struktur-box siswa">
+                <div class="foto-box">
+                    <img src="rizal.jpeg" alt="Siswa">
+                </div>
+                <h3>Raizal Ramadhan Putra Prasetyo</h3>
+                <p>Ketua Kelas</p>
+                <p>@rizly_pp</p>
+            </div>
+
+            <div class="struktur-box siswa">
+                <div class="foto-box">
+                    <img src="fandy.jpeg" alt="Siswa">
+                </div>
+                <h3>Fandy Akbar Putra Pratama</h3>
+                <p>Wakil Ketua Kelas</p>
+                <p>@fandyyoii_</p>
+            </div>
+
+            <div class="struktur-box siswa">
+                <div class="foto-box">
+                    <img src="pak alshaf.png" alt="Siswa">
+                </div>
+                <h3>Alshaf Pebrianggara, S.E., M.M.</h3>
+                <p>Kaprodi Bisnis Digital</p>
+            </div>
+
+            <div class="struktur-box siswa">
+                <div class="foto-box">
+                    <img src="miko.png" alt="Siswa">
+                </div>
+                <h3>Bumicko Atha Ghaly</h3>
+                <p>Bendahara</p>
+                <p>@miecookp</p>
+            </div>
+
+            <div class="struktur-box siswa">
+                <div class="foto-box">
+                    <img src="zahra.jpeg" alt="Siswa">
+                </div>
+                <h3>Naurah Az Zahra</h3>
+                <p>Sekretaris</p>
+                <p>@vylet.ra</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Anggota Kelas Section -->
+    <section id="anggota" class="anggota">
+        <h2>Anggota Kelas</h2>
+        
+        <!-- Pagination Controls -->
+        <div class="pagination">
+            <button id="prevBtn" class="page-btn" onclick="changePage(-1)">&#8592; Sebelumnya</button>
+            <span id="pageIndicator" class="page-indicator">Halaman 1 dari 4</span>
+            <button id="nextBtn" class="page-btn" onclick="changePage(1)">Selanjutnya &#8594;</button>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="anggota-container" id="page1">
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="chelsea.jpeg" alt="Siswa">
+                </div>
+                <h3>Rara Chelsea Basuki Putri</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@cchelssea</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="cindy.png" alt="Siswa">
+                </div>
+                <h3>Cindy Aurelia</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@cindy.aurelia23</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="risah.png" alt="Siswa">
+                </div>
+                <h3>Salsabila Marisah Rahmadany </h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@bila.rsh</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="dika.png" alt="Siswa">
+                </div>
+                <h3>Andika Pratama Putra</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@eyydkzz</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="hilmi.jpeg" alt="Siswa">
+                </div>
+                <h3>Mukhammad Hilmi Al Fatih</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@mukhammadhilmi_317</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="giggsy.png" alt="Siswa">
+                </div>
+                <h3>Giggsy Achmad Fahreisy</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@giggsy.a.f</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="adam.png" alt="Siswa">
+                </div>
+                <h3>Muh. Adam Perdana Rohmatulloh</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@smithz.ashcroft</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="aldo.png" alt="Siswa">
+                </div>
+                <h3>M. Aldo Firoos</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@fald_trck</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="tifa.png" alt="Siswa">
+                </div>
+                <h3>Insani Latifah</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@insnltfh</p>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="anggota-container" id="page2" style="display: none;">
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="aurel.png" alt="Siswa">
+                </div>
+                <h3>Azmi Aurel Nur Adilah</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@aaurelnd</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="verina.png" alt="Siswa">
+                </div>
+                <h3>Verina Lintang Gantari</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@vllynpch_</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="zaim.png" alt="Siswa">
+                </div>
+                <h3>Zaimul Mukhlisin Naf'an</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@naf_ann_</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="nabila.jpeg" alt="Siswa">
+                </div>
+                <h3>Nabila Maghfirotunnisa'</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@dumb.bilaa</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="naufal.jpeg" alt="Siswa">
+                </div>
+                <h3>Naufal Ahmad Kawashi</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@kawashi078</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="denisa.jpeg" alt="Siswa">
+                </div>
+                <h3>Denisa Rosifah Dewi</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@denisarosifah</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="rafli.png" alt="Siswa">
+                </div>
+                <h3>Rafli Andika Islami</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@rafli_a_i</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="candra.jpeg" alt="Siswa">
+                </div>
+                <h3>Candra Dwi Krisna Yahya</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@candradwikrisna</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="ryas.png" alt="Siswa">
+                </div>
+                <h3>Ryas Suci Maulidya</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@</p>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="anggota-container" id="page3" style="display: none;">
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="nylam.jpeg" alt="Siswa">
+                </div>
+                <h3>Khofifah Nylam Cahya</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@nylamchy</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="acha.png" alt="Siswa">
+                </div>
+                <h3>Marsha Dwi Anggraeni</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@marshazrn</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="farah.jpeg" alt="Siswa">
+                </div>
+                <h3>Farah Ardyanti Nursafitri</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@qyserrax</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="verina.jpeg" alt="Siswa">
+                </div>
+                <h3>Kaamiliaa Meilanda</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@meeilla._</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="vicky.jpeg" alt="Siswa">
+                </div>
+                <h3>Vicky Royyan Akbar Zainuddin</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@prx.kyy</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="aji.png" alt="Siswa">
+                </div>
+                <h3>Wibatsu Estuaji</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@wibss_e</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="wildan.jpeg" alt="Siswa">
+                </div>
+                <h3>Achmad Wildan Maghfirudin</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@chilghm</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="fani.jpeg" alt="Siswa">
+                </div>
+                <h3>Nisrina Fauliza Putri Fania</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@calizaaacs</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="anton.jpeg" alt="Siswa">
+                </div>
+                <h3>Anton Sugiok</h3>
+                <p>Mahasiswa Bisnis Digital</p>
+                <p>@dumplingsaja</p>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="anggota-container" id="page4" style="display: none;">
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="rena.jpeg" alt="Siswa">
+                </div>
+                <h3>Rena Amelia Dyanasari</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@rrennnaaa_</p>
+            </div>
+
+            <div class="anggota-box">
+                <div class="foto-box">
+                    <img src="fia.png" alt="Siswa">
+                </div>
+                <h3>Alifia Rachmatika Putri Innaku</h3>
+                <p>Mahasiswi Bisnis Digital</p>
+                <p>@rahmfia_inna</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Galeri Kelas</h2>
+        <div class="gallery-grid">
+            <div class="card"><img src="foto1.jpg" alt="Foto 1"></div>
+            <div class="card"><img src="foto2.jpg" alt="Foto 2"></div>
+            <div class="card"><img src="foto3.jpg" alt="Foto 3"></div>
+        </div>
+         <div class="gallery-grid">
+            <div class="card"><img src="foto4.jpeg" alt="Foto 4"></div>
+            <div class="card"><img src="foto5.jpeg" alt="Foto 5"></div>
+            <div class="card"><img src="foto6.jpeg" alt="Foto 6"></div>
+        </div>
+         <div class="gallery-grid">
+            <div class="card"><img src="foto7.JPG" alt="Foto 7"></div>
+            <div class="card"><img src="foto8.JPG" alt="Foto 8"></div>
+            <div class="card"><img src="foto9.JPG" alt="Foto 9"></div>
+        </div>
+         <div class="gallery-grid">
+            <div class="card"><img src="foto10.jpg" alt="Foto 10"></div>
+            <div class="card"><img src="foto11.jpg" alt="Foto 11"></div>
+            <div class="card"><img src="foto12.jpg" alt="Foto 12"></div>
+        </div>
+         <div class="gallery-grid">
+            <div class="card"><img src="foto13.jpg" alt="Foto 13"></div>
+            <div class="card"><img src="foto14.jpg" alt="Foto 14"></div>
+            <div class="card"><img src="foto15.jpg" alt="Foto 15"></div>
+            </div>
+         <div class="gallery-grid">
+            <div class="card"><img src="foto16.JPG" alt="Foto 16"></div>
+            <div class="card"><img src="foto17.JPG" alt="Foto 17"></div>
+            <div class="card"><img src="foto18.JPG" alt="Foto 18"></div>
+        </div>
+    </section>
+
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>BISNIS DIGITAL 2-A1</h3>
+                <p>Website Resmi Kelas</p>
+                <p>Melaju Pesat Tanpa Batas</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Media Sosial</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/bigvoners" target="_blank" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@bisnisdigital.umsida" target="_blank" class="social-icon tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p>Jl. Raya Lebo No.4, Rame, Pilang, Kec. Wonoayu, Kabupaten Sidoarjo, Jawa Timur 61261</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2026 Bisnis Digital 2-A1 UMSIDA</p>
+            </div>
+            <div class="website-by">
+                <p>Website by <strong>Dika</strong></p>
+            </div>
+        </div>
+    </footer>
+        
+        <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Gallery Image">
+        <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- MODAL PENGUMUMAN -->
+    <div id="pengumumanModal" class="pengumuman-modal">
+        <div class="pengumuman-modal-content">
+            <span class="pengumuman-close-btn" onclick="closePengumumanModal()">&times;</span>
+            <div id="pengumumanModalBody">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

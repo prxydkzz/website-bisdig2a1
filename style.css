@@ -1487,43 +1487,36 @@ footer {
     }
     
     .navbar{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:6px 10px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:8px 12px;
     }
 
-    /* logo lebih kecil */
     .logo{
-    display:flex;
-    align-items:center;
-    gap:5px;
-    font-size:13px;
+        font-size:14px;
     }
 
     .logo img{
-    width:24px;
-    height:24px;
+        width:28px;
+        height:28px;
     }
 
-    /* menu navbar */
     .nav-links{
-    display:grid;
-    grid-template-columns:repeat(4,auto);
-    gap:4px;
-    justify-content:end;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:8px;
+        font-size:12px;
     }
 
-    /* item menu */
     .nav-links li{
-    list-style:none;
+        list-style:none;
     }
 
-    /* link menu */
     .nav-links a{
-    font-size:10px;
-    padding:3px 4px;
-    text-decoration:none;
+        padding:4px 6px;
+        font-size:12px;
     }
  
     .burger {
@@ -1615,4 +1608,47 @@ footer {
     .pengumuman-modal-content {
         padding: 1rem;
     }
+}
+
+/* tombol burger */
+.burger{
+display:none;
+flex-direction:column;
+cursor:pointer;
+}
+
+.burger div{
+width:25px;
+height:3px;
+background:white;
+margin:4px;
+}
+
+/* tampilan HP */
+@media (max-width:768px){
+
+.nav-links{
+position:absolute;
+top:60px;
+right:10px;
+background:#85258a;
+width:200px;
+display:none;
+flex-direction:column;
+padding:10px;
+border-radius:8px;
+}
+
+.nav-links li{
+margin:8px 0;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.burger{
+display:flex;
+}
+
 }

@@ -13,31 +13,34 @@
 </head>
 <body>
     
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-            <span>BISNIS DIGITAL 2-A1 UMSIDA</span>
-        </div>
-        
-        <ul class="nav-links">
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#social">Medsos</a></li>
-            <li><a href="#struktur">Struktur dan Anggota</a></li>
-            <li><a href="#gallery">Galeri</a></li>
-            <li><a href="jadwal matkul.html" target="_blank">Jadwal</a></li>
-            <li><a href="javascript:void(0)" onclick="logout()" class="logout-btn">
+   <!-- Navbar -->
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>BISNIS DIGITAL 2-A1 UMSIDA</span>
+    </div>
+    
+    <ul class="nav-links" id="navMenu">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#social">Medsos</a></li>
+        <li><a href="#struktur">Struktur dan Anggota</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="jadwal matkul.html" target="_blank">Jadwal</a></li>
+        <li><a href="javascript:void(0)" onclick="logout()" class="logout-btn">
                 <i class="fas fa-sign-out-alt"></i> Logout
-            </a></li>
-        </ul>
-        
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+            </a>
+        </li>
+    </ul>
+    
+    <div class="burger" id="burgerBtn">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</nav>
 
     <!-- Hero Section (Bagian Utama) -->
     <section id="home" class="hero">
@@ -550,12 +553,21 @@
     </div>
 
     <script src="login.js"></script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
-    <script>
+<script>
 if(sessionStorage.getItem("login") !== "true"){
     window.location.href = "login.html";
 }
+</script>
+
+<script>
+const burger = document.getElementById("burgerBtn");
+const navMenu = document.getElementById("navMenu");
+
+burger.addEventListener("click", function(){
+    navMenu.classList.toggle("active");
+});
 </script>
 
 </body>

@@ -1502,14 +1502,6 @@ footer {
         height:28px;
     }
 
-    .nav-links{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        gap:8px;
-        font-size:12px;
-    }
-
     .nav-links li{
         list-style:none;
     }

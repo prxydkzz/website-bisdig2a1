@@ -154,16 +154,6 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// ==================== BURGER MENU MOBILE ====================
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-if (burger && navLinks) {
-    burger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-}
-
 // ==================== PENGUMUMAN ====================
 const pengumumanData = {
     1: {
@@ -217,6 +207,7 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
+// ==================== BURGER MENU MOBILE ====================
 document.addEventListener("DOMContentLoaded", function(){
 
 const burger = document.getElementById("burgerBtn");

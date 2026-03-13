@@ -552,7 +552,7 @@
         </div>
     </div>
 
-    <script src="login.js"></script>
+   <script src="login.js"></script>
 <script src="script.js"></script>
 
 <script>
@@ -564,9 +564,25 @@ if(sessionStorage.getItem("login") !== "true"){
 <script>
 const burger = document.getElementById("burgerBtn");
 const navMenu = document.getElementById("navMenu");
+const navLinks = navMenu.querySelectorAll("a");
 
-burger.addEventListener("click", function(){
-    navMenu.classList.toggle("active");
+/* buka tutup menu */
+burger.addEventListener("click", () => {
+navMenu.classList.toggle("active");
+});
+
+/* jika klik menu -> menu hilang */
+navLinks.forEach(link => {
+link.addEventListener("click", () => {
+navMenu.classList.remove("active");
+});
+});
+
+/* klik di luar menu -> menu hilang */
+document.addEventListener("click", function(e){
+if(!burger.contains(e.target) && !navMenu.contains(e.target)){
+navMenu.classList.remove("active");
+}
 });
 </script>
 

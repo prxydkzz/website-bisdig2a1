@@ -1486,34 +1486,39 @@ footer {
         padding: 1rem 5%;
     }
     
-  .nav-links{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    position: static;
-    background: transparent;
-}
-    
-    .nav-links.active {
-        display: flex;
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:8px 12px;
     }
-    
-    .nav-links li {
-        margin: 0;
-        padding: 1rem;
-        text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    .logo{
+        font-size:14px;
     }
-    
-    .nav-links a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        display: block;
+
+    .logo img{
+        width:28px;
+        height:28px;
     }
-    
+
+    .nav-links{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:8px;
+        font-size:12px;
+    }
+
+    .nav-links li{
+        list-style:none;
+    }
+
+    .nav-links a{
+        padding:4px 6px;
+        font-size:12px;
+    }
+ 
     .burger {
         display: flex;
     }

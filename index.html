@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
@@ -551,5 +551,12 @@
 
     <script src="login.js"></script>
     <script src="script.js"></script>
+
+    <script>
+if(sessionStorage.getItem("login") !== "true"){
+    window.location.href = "login.html";
+}
+</script>
+
 </body>
 </html>

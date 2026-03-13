@@ -11,8 +11,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function(e) {
     
     if (username === CORRECT_USERNAME && password === CORRECT_PASSWORD) {
 
-        localStorage.setItem('isLoggedIn', 'true');
-        localStorage.setItem('username', username);
+        sessionStorage.setItem("login","true");
         
         message.style.display = 'block';
         message.style.color = '#25D366';
@@ -22,6 +21,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function(e) {
         setTimeout(function() {
             window.location.href = 'index.html';
         }, 1000);
+        
     } else {
 
         message.style.display = 'block';
@@ -45,23 +45,6 @@ document.getElementById('loginForm')?.addEventListener('submit', function(e) {
 
 // ==================== LOGOUT FUNCTION ====================
 function logout() {
-    
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('username');
-    
-
-    window.location.href = 'login.html';
+    sessionStorage.removeItem("login");
+    window.location.href = "login.html";
 }
-
-// ==================== AUTO LOGOUT SAAT MENUTUP TAB ====================
-window.addEventListener('beforeunload', function() {
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('username');
-});
-
-document.addEventListener('visibilitychange', function() {
-    if (document.hidden) {
-        localStorage.removeItem('isLoggedIn');
-        localStorage.removeItem('username');
-    }
-});

@@ -82,6 +82,7 @@ body {
     text-align: center;
     color: white;
     padding: 0 20px;
+    margin-top: 90px;
 }
 
 .hero h1 {
@@ -1485,17 +1486,15 @@ footer {
         padding: 1rem 5%;
     }
     
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #85258a;
-        padding: 1rem 0;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: static;
+    background: transparent;
+}
     
     .nav-links.active {
         display: flex;

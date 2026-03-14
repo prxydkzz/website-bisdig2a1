@@ -1763,3 +1763,149 @@ font-size:15px;
 }
 
 }
+
+/* ================== INFO MATA KULIAH ================== */
+
+.matkul-info{
+display:flex;
+flex-direction:column;
+flex:1;
+padding:0 12px;
+}
+
+/* nama mata kuliah */
+
+.subject{
+font-weight:600;
+font-size:15px;
+color:#222;
+line-height:1.3;
+}
+
+/* PJ mata kuliah */
+
+.pj{
+font-size:13px;
+color:#666;
+margin-top:4px;
+display:flex;
+align-items:center;
+}
+
+/* icon kecil PJ */
+
+.pj::before{
+content:"👤";
+font-size:13px;
+margin-right:6px;
+}
+
+
+/* ================== RESPONSIVE TABLET ================== */
+
+@media (max-width:992px){
+
+.subject{
+font-size:14px;
+}
+
+.pj{
+font-size:12px;
+}
+
+}
+
+
+/* ================== RESPONSIVE HP ================== */
+
+@media (max-width:768px){
+
+.matkul-info{
+padding:0 8px;
+}
+
+.subject{
+font-size:13px;
+}
+
+.pj{
+font-size:11px;
+margin-top:3px;
+}
+
+.pj::before{
+font-size:11px;
+}
+
+}
+
+/* FORM IZIN */
+
+.izin-form{
+display:none;
+margin-top:20px;
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+width:260px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.izin-form select{
+width:100%;
+padding:10px;
+border-radius:8px;
+border:1px solid #ddd;
+margin-bottom:12px;
+font-size:14px;
+}
+
+.btn-kirim{
+background:#25D366;
+color:white;
+border:none;
+padding:10px;
+border-radius:8px;
+width:100%;
+cursor:pointer;
+font-weight:600;
+}
+
+.btn-kirim:hover{
+background:#1ebe5d;
+}
+
+/* ==================== RESPONSIVE IZIN ==================== */
+
+@media (max-width:768px){
+
+.izin-section{
+padding:60px 15px;
+}
+
+.btn-izin{
+width:100%;
+max-width:220px;
+font-size:15px;
+padding:12px;
+}
+
+.izin-form{
+width:100%;
+max-width:260px;
+padding:18px;
+}
+
+.izin-form select{
+font-size:14px;
+padding:9px;
+}
+
+.btn-kirim{
+font-size:14px;
+padding:10px;
+}
+
+}

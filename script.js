@@ -234,3 +234,60 @@ navMenu.classList.remove("active");
 });
 
 });
+
+//======= IZIN MATKUL =======
+function toggleIzinForm(){
+const form = document.getElementById("izinForm");
+
+if(form.style.display === "block"){
+form.style.display = "none";
+}else{
+form.style.display = "block";
+}
+}
+
+function kirimIzin(){
+
+const pilihan = document.getElementById("matkulSelect").value;
+
+const pesan = "Assalamu'alaikum Wr. Wb.\n\nAku izin tidak mengikuti perkuliahan hari ini\n\nNama Lengkap:\nNIM:\nHari & Tanggal:\nMata Kuliah:\nAlasan:\n\nTerima kasih";
+
+let nomor = "";
+
+if(pilihan === "sekretaris"){
+nomor = "628133181398";
+}
+
+else if(pilihan === "ilmu"){
+nomor = "6285815109392";
+}
+
+else if(pilihan === "keuangan"){
+nomor = "6288989135688";
+}
+
+else if(pilihan === "pd"){
+nomor = "6285704621189";
+}
+
+else if(pilihan === "design"){
+nomor = "6281230163597";
+}
+
+else if(pilihan === "ai"){
+nomor = "6285100924303";
+}
+
+else if(pilihan === "statistik"){
+nomor = "6285235952163";
+}
+
+else if(pilihan === "ibadah"){
+nomor = "6285704694544";
+}
+
+if(nomor !== ""){
+window.open(`https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`);
+}
+
+}

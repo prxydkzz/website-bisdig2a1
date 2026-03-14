@@ -109,27 +109,37 @@
 
     <!-- SECTION IZIN -->
     <section id="izin" class="izin-section">
+
     <h2>Izin Tidak Masuk</h2>
+    <p>Kirim pesan izin kepada sekretaris dan PJ matkul masing-masing</p>
 
-    <p>
-    Klik tombol di bawah ini untuk mengirim izin tidak mengikuti perkuliahan kepada sekretaris kelas.
-    </p>
-
-    <a 
-    href="https://wa.me/628133181398?text=Assalamu%27alaikum%20Wr.%20Wb.%20Zahra%0A%0A
-    Aku%20ingin%20izin%20tidak%20mengikuti%20perkuliahan%20hari%20ini%0A%0A
-    Nama%20Lengkap%3A%20%0A
-    NIM%3A%20%0A
-    Hari%20%26%20Tanggal%3A%20%0A
-    Mata%20Kuliah%3A%20%0A
-    Alasan%3A%20%0A%0A
-    Terima%20kasih"
-    target="_blank"
-    class="btn-izin">
-
+    <button class="btn-izin" onclick="toggleIzinForm()">
     Izin
+    </button>
 
-    </a>
+    <div class="izin-form" id="izinForm">
+
+    <select id="matkulSelect">
+
+    <option value="">Pilih Tujuan Izin</option>
+    <option value="sekretaris">Sekretaris</option>
+    <option value="ilmu">Ilmu Ekonomi Makro</option>
+    <option value="keuangan">Keuangan Bisnis Digital</option>
+    <option value="pd">Pemrograman Dasar</option>
+    <option value="design">Design Thinking</option>
+    <option value="ai">Artificial Intelligence</option>
+    <option value="statistik">Statistik</option>
+    <option value="ibadah">Ibadah Akhlak dan Muamalah</option>
+
+    </select>
+
+    <button onclick="kirimIzin()" class="btn-kirim">
+    Kirim Izin
+    </button>
+
+    </div>
+    
+    <p>(NOTE): Surat izin fisik (hardfile) dibawa dan dikasihkan ke sekretaris pada hari besoknya</p>
     </section>
 
          <!-- Media Sosial Section -->
